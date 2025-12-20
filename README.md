@@ -9,7 +9,7 @@
 
 ## 💥 Luau's Unstoppable Force
 
-> ![WARNING]
+> [!WARNING]
 > **Prvd 'M Wrong is unmaintained.** Team Fireworks has no active project that
 > requires Prvd 'M Wrong at this moment, and so it will be shelfed for more
 > important matters. We may return and complete Prvd 'M Wrong 0.2 at some point,
