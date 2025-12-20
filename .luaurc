@@ -1,12 +1,12 @@
 {
-    "languageMode": "strict",
-    "lint": {
-        "*": true
-    },
-    "aliases": {
-        "lune-lib": "./.lune/lib",
-        "lune": "~/.lune/.typedefs/0.9.4/",
-        "sitegen": "./sitegen",
-        "zcore": "~/.zune/typedefs/core"
-    }
+  "languageMode": "strict",
+  "lint": {
+    "*": true
+  },
+  "aliases": {
+    "lune-lib": "./.lune/lib",
+    "lune": "~/.lune/.typedefs/0.10.4/",
+    "sitegen": "./sitegen",
+    "zcore": "~/.zune/typedefs/core"
+  }
 }

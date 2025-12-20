@@ -22,7 +22,7 @@ export type RepoConfig = {
 		pesde: RootPublisher,
 		wally: RootPublisher,
 		npm: RootPublisher,
-	},
+	}
 }
 
 local function root(x: RepoConfig)
@@ -63,6 +63,8 @@ export type PackageConfig = {
 	dependencies: PackageDependencies?,
 
 	types: { [string]: boolean | string }?,
+
+	unreleased: boolean?
 }
 
 local function package(x: PackageConfig)

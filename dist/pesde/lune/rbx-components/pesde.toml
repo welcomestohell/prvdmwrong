@@ -1,0 +1,43 @@
+authors = ["Fire <znotfireman@gmail.com>"]
+description = "Component functionality for Prvd 'M Wrong"
+includes = [
+    "src/**/*.luau",
+    "LICENSE.md",
+    "README.md",
+    "pesde.toml",
+    "logger.luau",
+    "roots.luau",
+    "providers.luau",
+    "dependencies.luau",
+    "logger.luau",
+    "roots.luau",
+    "providers.luau",
+    "dependencies.luau",
+]
+license = "MPL-2.0"
+name = "prvdmwrong/rbx_components"
+repository = "https://github.com/prvdmwrong/prvdmwrong"
+version = "0.2.0-rc.3"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[target]
+build_files = [
+    "src",
+    "logger.luau",
+    "roots.luau",
+    "providers.luau",
+    "dependencies.luau",
+    "logger.luau",
+    "roots.luau",
+    "providers.luau",
+    "dependencies.luau",
+]
+environment = "lune"
+lib = "src/init.luau"
+[dependencies]
+logger = { name = "prvdmwrong/logger", version = "0.2.0-rc.3" }
+roots = { name = "prvdmwrong/roots", version = "0.2.0-rc.3" }
+providers = { name = "prvdmwrong/providers", version = "0.2.0-rc.3" }
+dependencies = { name = "prvdmwrong/dependencies", version = "0.2.0-rc.3" }

@@ -4,6 +4,8 @@ return configure.package({
 	name = "rbx-components",
 	description = "Component functionality for Prvd 'M Wrong",
 
+	unreleased = true,
+
 	dependencies = configure.dependencies({
 		logger = true,
 		roots = true,

@@ -1,0 +1,23 @@
+{
+  "author": "Fire <znotfireman@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/prvdmwrong/prvdmwrong/issues"
+  },
+  "dependencies": {
+    "@prvdmwrong/runtime": "0.2.0-rc.3"
+  },
+  "description": "Logging for Prvd 'M Wrong",
+  "files": [
+    "src",
+    "LICENSE.md",
+    "package.json"
+  ],
+  "main": "src/init.luau",
+  "name": "@prvdmwrong/logger",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prvdmwrong/prvdmwrong.git"
+  },
+  "types": "src/init.luau",
+  "version": "0.2.0-rc.3"
+}

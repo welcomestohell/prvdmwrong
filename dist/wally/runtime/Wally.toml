@@ -1,0 +1,13 @@
+[package]
+authors = ["Fire <znotfireman@gmail.com>"]
+description = "Runtime agnostic libraries for Prvd 'M Wrong"
+homepage = "https://prvdmwrong.luau.page/latest/"
+license = "MPL-2.0"
+name = "prvdmwrong/runtime"
+private = false
+realm = "shared"
+registry = "https://github.com/upliftgames/wally-index"
+repository = "https://github.com/prvdmwrong/prvdmwrong"
+version = "0.2.0-rc.3"
+
+[package.dependencies]

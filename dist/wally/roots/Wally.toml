@@ -1,0 +1,17 @@
+[package]
+authors = ["Fire <znotfireman@gmail.com>"]
+description = "Roots implementation for Prvd 'M Wrong"
+homepage = "https://prvdmwrong.luau.page/latest/"
+license = "MPL-2.0"
+name = "prvdmwrong/roots"
+private = false
+realm = "shared"
+registry = "https://github.com/upliftgames/wally-index"
+repository = "https://github.com/prvdmwrong/prvdmwrong"
+version = "0.2.0-rc.3"
+
+[package.dependencies]
+lifecycles = "prvdmwrong/lifecycles@0.2.0-rc.3"
+logger = "prvdmwrong/logger@0.2.0-rc.3"
+providers = "prvdmwrong/providers@0.2.0-rc.3"
+runtime = "prvdmwrong/runtime@0.2.0-rc.3"

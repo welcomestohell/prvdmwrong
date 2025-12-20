@@ -1,0 +1,24 @@
+{
+  "author": "Fire <znotfireman@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/prvdmwrong/prvdmwrong/issues"
+  },
+  "dependencies": {
+    "@prvdmwrong/lifecycles": "0.2.0-rc.3",
+    "@prvdmwrong/logger": "0.2.0-rc.3"
+  },
+  "description": "Dependency resolution logic for Prvd 'M Wrong",
+  "files": [
+    "src",
+    "LICENSE.md",
+    "package.json"
+  ],
+  "main": "src/init.luau",
+  "name": "@prvdmwrong/dependencies",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prvdmwrong/prvdmwrong.git"
+  },
+  "types": "src/init.luau",
+  "version": "0.2.0-rc.3"
+}
