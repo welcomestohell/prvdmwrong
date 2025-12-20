@@ -12,6 +12,7 @@ return configure.package({
 	},
 
 	dependencies = configure.dependencies({
+		dependencies = true,
 		lifecycles = true,
 		providers = true,
 		roots = true,
