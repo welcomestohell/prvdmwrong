@@ -164,7 +164,7 @@ do
 				-- I love stylua
 				table.insert(
 					dependencies,
-					`{dependency} = \{ name = "{pesdeify(
+					`{dependency} = \{ workspace = "{pesdeify(
 						`{rootConfig.publishers.pesde.scope}/{dependentPackage.config.name}`
 					)}", `
 						.. `version = "{dependentPackage.config.version or rootConfig.defaults.version}" }`

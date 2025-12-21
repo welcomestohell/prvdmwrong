@@ -25,8 +25,8 @@ build_files = [
 environment = "roblox"
 lib = "src/init.luau"
 [dependencies]
-logger = { name = "prvdmwrong/logger", version = "0.2.0-rc.4" }
-runtime = { name = "prvdmwrong/runtime", version = "0.2.0-rc.4" }
+logger = { workspace = "prvdmwrong/logger", version = "0.2.0-rc.4" }
+runtime = { workspace = "prvdmwrong/runtime", version = "0.2.0-rc.4" }
 
 		[scripts]
 		roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"

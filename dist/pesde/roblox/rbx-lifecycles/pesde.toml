@@ -23,7 +23,7 @@ build_files = [
 environment = "roblox"
 lib = "src/init.luau"
 [dependencies]
-prvdmwrong = { name = "prvdmwrong/prvdmwrong", version = "0.2.0-rc.4" }
+prvdmwrong = { workspace = "prvdmwrong/prvdmwrong", version = "0.2.0-rc.4" }
 
 		[scripts]
 		roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
