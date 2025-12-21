@@ -6,14 +6,17 @@ includes = [
     "README.md",
     "pesde.toml",
     "logger.luau",
+    "dependencies.luau",
     "runtime.luau",
     "providers.luau",
     "lifecycles.luau",
     "logger.luau",
+    "dependencies.luau",
     "runtime.luau",
     "providers.luau",
     "lifecycles.luau",
     "logger.luau",
+    "dependencies.luau",
     "runtime.luau",
     "providers.luau",
     "lifecycles.luau",
@@ -30,14 +33,17 @@ default = "https://github.com/pesde-pkg/index"
 build_files = [
     "src",
     "logger.luau",
+    "dependencies.luau",
     "runtime.luau",
     "providers.luau",
     "lifecycles.luau",
     "logger.luau",
+    "dependencies.luau",
     "runtime.luau",
     "providers.luau",
     "lifecycles.luau",
     "logger.luau",
+    "dependencies.luau",
     "runtime.luau",
     "providers.luau",
     "lifecycles.luau",
@@ -46,6 +52,7 @@ environment = "luau"
 lib = "src/init.luau"
 [dependencies]
 logger = { name = "prvdmwrong/logger", version = "0.2.0-rc.3" }
+dependencies = { name = "prvdmwrong/dependencies", version = "0.2.0-rc.3" }
 providers = { name = "prvdmwrong/providers", version = "0.2.0-rc.3" }
 lifecycles = { name = "prvdmwrong/lifecycles", version = "0.2.0-rc.3" }
 runtime = { name = "prvdmwrong/runtime", version = "0.2.0-rc.3" }

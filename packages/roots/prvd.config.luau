@@ -10,6 +10,7 @@ return configure.package({
 	},
 
 	dependencies = configure.dependencies({
+		dependencies = true,
 		logger = true,
 		lifecycles = true,
 		runtime = true,
