@@ -6,29 +6,24 @@ local rootFinished = require("../hooks/root-finished").callbacks
 local rootStarted = require("../hooks/root-started").callbacks
 local types = require("../types")
 
-local function bindLifecycle(
-	method: string,
-	provider: providers.Provider<any>,
-	lifecycle: lifecycles.Lifecycle<...any>,
-	memoryCategory: string
-)
-	local lifecycleMethod = (provider :: any)[method]
+local function bindLifecycle(lifecycle: lifecycles.Lifecycle<...any>, provider: providers.Provider<any>)
+	local lifecycleMethod = (provider :: any)[lifecycle.method]
 	if typeof(lifecycleMethod) == "function" then
-		local isProfiling = _G.PRVDMWRONG_PROFILE_LIFECYCLES
+		-- local isProfiling = _G.PRVDMWRONG_PROFILE_LIFECYCLES
 
-		if isProfiling then
-			lifecycle:register(function(...)
-				debug.profilebegin(memoryCategory)
-				debug.setmemorycategory(memoryCategory)
-				lifecycleMethod(provider, ...)
-				debug.resetmemorycategory()
-				debug.profileend()
-			end)
-		else
-			lifecycle:register(function(...)
-				lifecycleMethod(provider, ...)
-			end)
-		end
+		-- if isProfiling then
+		-- 	lifecycle:register(function(...)
+		-- 		debug.profilebegin(memoryCategory)
+		-- 		debug.setmemorycategory(memoryCategory)
+		-- 		lifecycleMethod(provider, ...)
+		-- 		debug.resetmemorycategory()
+		-- 		debug.profileend()
+		-- 	end)
+		-- else
+		lifecycle:register(function(...)
+			lifecycleMethod(provider, ...)
+		end)
+		-- end
 	end
 end
 
@@ -39,8 +34,8 @@ end
 local function start(root: types.Self): types.StartedRoot
 	local processed = dependencies.processDependencies(root._rootProviders)
 	local sortedProviders = processed.sortedDependencies :: { providers.Provider<any> }
-	local lifecycles = processed.lifecycles
-	table.move(root._rootLifecycles, 1, #root._rootLifecycles, #lifecycles + 1, lifecycles)
+	local processedLifecycles = processed.lifecycles
+	table.move(root._rootLifecycles, 1, #root._rootLifecycles, #processedLifecycles + 1, processedLifecycles)
 
 	dependencies.sortByPriority(sortedProviders)
 
@@ -56,8 +51,12 @@ local function start(root: types.Self): types.StartedRoot
 
 		local constructed = provider.new(providerDependencies)
 		constructedProviders[provider] = constructed
-		bindLifecycle("start", constructed, constructed.start, nameOf(constructed, "start"))
-		bindLifecycle("finish", constructed, constructed.finish, nameOf(constructed, "finish"))
+		bindLifecycle(root._start, constructed)
+		bindLifecycle(root._finish, constructed)
+
+		for _, lifecycle in processedLifecycles do
+			bindLifecycle(lifecycle, constructed)
+		end
 	end
 
 	local subRoots: { types.StartedRoot } = {}

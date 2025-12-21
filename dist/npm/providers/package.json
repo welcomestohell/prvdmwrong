@@ -4,10 +4,10 @@
     "url": "https://github.com/prvdmwrong/prvdmwrong/issues"
   },
   "dependencies": {
-    "@prvdmwrong/dependencies": "0.2.0-rc.3",
-    "@prvdmwrong/lifecycles": "0.2.0-rc.3",
-    "@prvdmwrong/logger": "0.2.0-rc.3",
-    "@prvdmwrong/runtime": "0.2.0-rc.3"
+    "@prvdmwrong/dependencies": "0.2.0-rc.4",
+    "@prvdmwrong/lifecycles": "0.2.0-rc.4",
+    "@prvdmwrong/logger": "0.2.0-rc.4",
+    "@prvdmwrong/runtime": "0.2.0-rc.4"
   },
   "description": "Provider creation for Prvd 'M Wrong",
   "files": [
@@ -22,5 +22,5 @@
     "url": "git+https://github.com/prvdmwrong/prvdmwrong.git"
   },
   "types": "src/init.luau",
-  "version": "0.2.0-rc.3"
+  "version": "0.2.0-rc.4"
 }

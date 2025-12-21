@@ -8,7 +8,7 @@ private = false
 realm = "shared"
 registry = "https://github.com/upliftgames/wally-index"
 repository = "https://github.com/prvdmwrong/prvdmwrong"
-version = "0.2.0-rc.3"
+version = "0.2.0-rc.4"
 
 [package.dependencies]
-runtime = "prvdmwrong/runtime@0.2.0-rc.3"
+runtime = "prvdmwrong/runtime@0.2.0-rc.4"

@@ -11,7 +11,7 @@ includes = [
 license = "MPL-2.0"
 name = "prvdmwrong/logger"
 repository = "https://github.com/prvdmwrong/prvdmwrong"
-version = "0.2.0-rc.3"
+version = "0.2.0-rc.4"
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
@@ -25,4 +25,4 @@ build_files = [
 environment = "lune"
 lib = "src/init.luau"
 [dependencies]
-runtime = { name = "prvdmwrong/runtime", version = "0.2.0-rc.3" }
+runtime = { name = "prvdmwrong/runtime", version = "0.2.0-rc.4" }

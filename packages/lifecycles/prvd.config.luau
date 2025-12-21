@@ -10,6 +10,6 @@ return configure.package({
 	}),
 
 	types = {
-		["Lifecycle<Args... = ...unknown>"] = "Lifecycles<Args...>",
+		["Lifecycle<Args... = ...unknown>"] = "Lifecycle<Args...>",
 	},
 })

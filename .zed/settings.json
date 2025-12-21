@@ -3,15 +3,16 @@
 // For a full list of overridable settings, and general information on folder-specific settings,
 // see the documentation: https://zed.dev/docs/configuring-zed#settings-files
 {
-    "lsp": {
-        "luau-lsp": {
-            "settings": {
-                "ext": {
-                    "definitions": [
-                        "types/g.d.luau"
-                    ]
-                }
-            }
-        }
-    }
+	"lsp": {
+		"luau-lsp": {
+			"settings": {
+				"roblox": {
+					"enabled": true,
+					"security_level": "none",
+					"download_api_documentation": true,
+					"download_definitions": true
+				}
+			}
+		}
+	}
 }

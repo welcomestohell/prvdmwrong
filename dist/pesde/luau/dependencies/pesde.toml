@@ -15,7 +15,7 @@ includes = [
 license = "MPL-2.0"
 name = "prvdmwrong/dependencies"
 repository = "https://github.com/prvdmwrong/prvdmwrong"
-version = "0.2.0-rc.3"
+version = "0.2.0-rc.4"
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
@@ -33,5 +33,5 @@ build_files = [
 environment = "luau"
 lib = "src/init.luau"
 [dependencies]
-lifecycles = { name = "prvdmwrong/lifecycles", version = "0.2.0-rc.3" }
-logger = { name = "prvdmwrong/logger", version = "0.2.0-rc.3" }
+lifecycles = { name = "prvdmwrong/lifecycles", version = "0.2.0-rc.4" }
+logger = { name = "prvdmwrong/logger", version = "0.2.0-rc.4" }

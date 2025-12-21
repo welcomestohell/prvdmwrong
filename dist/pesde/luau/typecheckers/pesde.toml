@@ -9,7 +9,7 @@ includes = [
 license = "MPL-2.0"
 name = "prvdmwrong/typecheckers"
 repository = "https://github.com/prvdmwrong/prvdmwrong"
-version = "0.2.0-rc.3"
+version = "0.2.0-rc.4"
 
 [indices]
 default = "https://github.com/pesde-pkg/index"

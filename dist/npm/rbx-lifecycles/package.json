@@ -4,7 +4,7 @@
     "url": "https://github.com/prvdmwrong/prvdmwrong/issues"
   },
   "dependencies": {
-    "@prvdmwrong/prvdmwrong": "0.2.0-rc.3"
+    "@prvdmwrong/prvdmwrong": "0.2.0-rc.4"
   },
   "description": "Lifecycles implementations for Roblox",
   "files": [
@@ -19,5 +19,5 @@
     "url": "git+https://github.com/prvdmwrong/prvdmwrong.git"
   },
   "types": "src/init.luau",
-  "version": "0.2.0-rc.3"
+  "version": "0.2.0-rc.4"
 }

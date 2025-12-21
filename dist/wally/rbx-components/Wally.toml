@@ -8,10 +8,10 @@ private = false
 realm = "shared"
 registry = "https://github.com/upliftgames/wally-index"
 repository = "https://github.com/prvdmwrong/prvdmwrong"
-version = "0.2.0-rc.3"
+version = "0.2.0-rc.4"
 
 [package.dependencies]
-dependencies = "prvdmwrong/dependencies@0.2.0-rc.3"
-logger = "prvdmwrong/logger@0.2.0-rc.3"
-providers = "prvdmwrong/providers@0.2.0-rc.3"
-roots = "prvdmwrong/roots@0.2.0-rc.3"
+dependencies = "prvdmwrong/dependencies@0.2.0-rc.4"
+logger = "prvdmwrong/logger@0.2.0-rc.4"
+providers = "prvdmwrong/providers@0.2.0-rc.4"
+roots = "prvdmwrong/roots@0.2.0-rc.4"

@@ -4,8 +4,8 @@
     "url": "https://github.com/prvdmwrong/prvdmwrong/issues"
   },
   "dependencies": {
-    "@prvdmwrong/lifecycles": "0.2.0-rc.3",
-    "@prvdmwrong/logger": "0.2.0-rc.3"
+    "@prvdmwrong/lifecycles": "0.2.0-rc.4",
+    "@prvdmwrong/logger": "0.2.0-rc.4"
   },
   "description": "Dependency resolution logic for Prvd 'M Wrong",
   "files": [
@@ -20,5 +20,5 @@
     "url": "git+https://github.com/prvdmwrong/prvdmwrong.git"
   },
   "types": "src/init.luau",
-  "version": "0.2.0-rc.3"
+  "version": "0.2.0-rc.4"
 }

@@ -1,3 +1,3 @@
 local DEPENDENCY = require("./lune_packages/lifecycles")
-export type Lifecycle<Args... = ...unknown> = DEPENDENCY.Lifecycles<Args...>
+export type Lifecycle<Args... = ...unknown> = DEPENDENCY.Lifecycle<Args...>
 return DEPENDENCY
