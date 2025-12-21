@@ -41,4 +41,4 @@ function mt.__call<Self>(_, provider: Self): providers.Provider<Self, any>
 end
 
 table.freeze(mt)
-return setmetatable(table.freeze(prvd), mt)
+return setmetatable(prvd, mt)

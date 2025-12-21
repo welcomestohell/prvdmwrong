@@ -7,7 +7,7 @@ local fireConcurrent = prvd.fireConcurrent
 
 local RbxLifecycles = {}
 RbxLifecycles.name = "@prvdmwrong/rbx-lifecycles"
-RbxLifecycles[prvd.priority] = -math.huge
+RbxLifecycles.priority = -math.huge
 
 RbxLifecycles.preSimulation = prvd.lifecycle("preSimulation", fireConcurrent) :: prvd.Lifecycle<number>
 RbxLifecycles.postSimulation = prvd.lifecycle("postSimulation", fireConcurrent) :: prvd.Lifecycle<number>
