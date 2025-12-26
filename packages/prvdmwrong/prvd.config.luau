@@ -6,7 +6,7 @@ return configure.package({
 
 	types = {
 		["Lifecycle<Args... = ...unknown>"] = "Lifecycle<Args...>",
-		["Provider<Self, Dependencies = nil>"] = "providers.Provider<Self, Dependencies>",
+		["Provider<Self, Dependencies = nil>"] = "Provider<Self, Dependencies>",
 		Root = true,
 		StartedRoot = true,
 	},
