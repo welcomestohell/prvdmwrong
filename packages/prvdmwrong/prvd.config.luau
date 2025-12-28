@@ -1,0 +1,20 @@
+local configure = require("@lune-lib/configure")
+
+return configure.package({
+	name = "prvdmwrong",
+	description = "Entry point to Prvd 'M Wrong",
+
+	types = {
+		["Lifecycle<Args... = ...unknown>"] = "Lifecycle<Args...>",
+		["Provider<Self, Dependencies = nil>"] = "Provider<Self, Dependencies>",
+		Root = true,
+		StartedRoot = true,
+	},
+
+	dependencies = configure.dependencies({
+		dependencies = true,
+		lifecycles = true,
+		providers = true,
+		roots = true,
+	}),
+})
