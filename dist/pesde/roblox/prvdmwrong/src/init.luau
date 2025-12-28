@@ -34,11 +34,12 @@ local prvd = {
 	}),
 }
 
-local mt = {}
+type PrvdModule = (<Self>(provider: Self) -> Provider<Self, any>) & typeof(prvd)
 
+local mt = {}
 function mt.__call<Self>(_, provider: Self): providers.Provider<Self, any>
 	return providers.create(provider) :: any
 end
 
-table.freeze(mt)
-return setmetatable(prvd, mt)
+local module: PrvdModule = setmetatable(prvd, mt) :: any
+return module
