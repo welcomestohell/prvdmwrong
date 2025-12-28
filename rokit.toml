@@ -4,7 +4,7 @@
 # New tools can be added by running `rokit add <tool>` in a terminal.
 
 [tools]
-stylua = "JohnnyMorganz/StyLua@2.3.1"
+StyLua = "JohnnyMorganz/StyLua@2.3.1"
 luau-lsp = "JohnnyMorganz/luau-lsp@1.58.0"
 rojo = "rojo-rbx/rojo@7.6.1"
 # Runtimes

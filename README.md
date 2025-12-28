@@ -12,7 +12,6 @@
 > [!WARNING]
 > **Prvd 'M Wrong is unfinished.** Do not use Prvd 'M Wrong for production.
 
-
 Luau has often meant navigating sprawling mazes of dependencies, grappling with
 incomplete frameworks, and a challenging development experience.
 
