@@ -1,0 +1,11 @@
+# This file lists tools managed by Rokit, a toolchain manager for Roblox projects.
+# For more information, see https://github.com/rojo-rbx/rokit
+
+# New tools can be added by running `rokit add <tool>` in a terminal.
+
+[tools]
+luau-lsp = "JohnnyMorganz/luau-lsp@1.68.0"
+pesde = "pesde-pkg/pesde@0.7.3+registry.0.2.3"
+stylua = "JohnnyMorganz/StyLua@2.5.2"
+lute = "luau-lang/lute@1.0.0"
+rojo = "rojo-rbx/rojo@7.7.0-rc.1"
